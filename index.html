@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Приватний нотаріус Семенюк Тетяна</title>
+<meta name="description" content="Приватний нотаріус у Вишгороді. Нотаріальні послуги, консультації, оформлення документів та зручний запис на прийом.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-left">
+    <a class="brand-link" href="#home" data-page-link="home" aria-label="На головну">
+      <img class="logo-mark logo-image" src="images/logo.png" alt="Логотип нотаріуса">
+      <span class="logo-text">Семенюк Тетяна</span>
+    </a>
+  </div>
+
+  <nav id="main-nav" aria-label="Основна навігація">
+    <a href="#pro-nas" data-page-link="pro-nas">Записатися зараз</a>
+    <a href="#poslugy" data-page-link="poslugy">Послуги</a>
+    <a href="#grafik" data-page-link="grafik">Графік роботи</a>
+    <a href="#vidguky" data-page-link="vidguky">Відгуки</a>
+    <a href="#dodatkova" data-page-link="dodatkova">Додаткова інформація</a>
+  </nav>
+
+  <div class="header-right">
+    <button class="search-btn" type="button" id="open-search" aria-haspopup="dialog" aria-controls="search-modal">
+      <svg class="search-icon" viewBox="0 0 16 16" aria-hidden="true">
+        <circle cx="7" cy="7" r="4.5"></circle>
+        <line x1="10.5" y1="10.5" x2="14" y2="14"></line>
+      </svg>
+      Пошук
+    </button>
+  </div>
+
+  <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Відкрити меню">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+  <div class="page active" id="page-home" data-page-title="Головна">
+    <div class="content-card">
+      <section class="hero">
+        <p class="hero-tag">Вишгород · Нотаріальні послуги</p>
+        <h1>Приватний нотаріус<br>Семенюк Тетяна</h1>
+        <p class="hero-sub">Юридична точність. Людський підхід. Понад двадцять років досвіду.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#poslugy" data-page-link="poslugy">Дізнатися більше</a>
+        </div>
+        <div class="quick-actions">
+          <a class="quick-btn" href="tel:+380679635755">Зателефонувати</a>
+          <a class="quick-btn" href="https://maps.google.com/?q=м.+Вишгород,+вул.+Набережна+6-Ж" target="_blank" rel="noopener noreferrer">Маршрут</a>
+          <a class="quick-btn" href="#vidguky" data-page-link="vidguky">Відгуки</a>
+        </div>
+
+        <div class="hero-services reveal">
+          <p class="section-label services-kicker">Найпопулярніші послуги</p>
+          <div class="service-grid compact-grid">
+            <button class="service-card compact-card" type="button" data-page-link="poslugy" data-scroll-target="service-sale">
+              <span class="service-card-title">Договір купівлі-продажу</span>
+            </button>
+            <button class="service-card compact-card" type="button" data-page-link="poslugy" data-scroll-target="service-power">
+              <span class="service-card-title">Довіреність</span>
+            </button>
+            <button class="service-card compact-card" type="button" data-page-link="poslugy" data-scroll-target="service-gift">
+              <span class="service-card-title">Дарування</span>
+            </button>
+            <button class="service-card compact-card" type="button" data-page-link="poslugy" data-scroll-target="service-inheritance">
+              <span class="service-card-title">Спадщина</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-label reveal">Про нас</p>
+        <div class="divider reveal"></div>
+        <div class="stats-grid reveal">
+          <a class="stat-card" href="#article-clients" data-page-link="article-clients">
+            <div class="stat-num">1000+</div>
+            <div class="stat-text">Задоволених клієнтів</div>
+            <div class="stat-arrow">→</div>
+          </a>
+          <a class="stat-card" href="#article-experience" data-page-link="article-experience">
+            <div class="stat-num">20+</div>
+            <div class="stat-text">Років досвіду та праці нотаріусом</div>
+            <div class="stat-arrow">→</div>
+          </a>
+          <a class="stat-card" href="#article-prof" data-page-link="article-prof">
+            <div class="stat-num stat-title">Професіоналізм</div>
+            <div class="stat-text">Висока якість кожної послуги</div>
+            <div class="stat-arrow">→</div>
+          </a>
+          <a class="stat-card" href="#article-consult" data-page-link="article-consult">
+            <div class="stat-num stat-title">Консультації</div>
+            <div class="stat-text">Юридичні консультації</div>
+            <div class="stat-arrow">→</div>
+          </a>
+        </div>
+      </section>
+
+      <section class="photos-section">
+        <p class="section-label reveal">Атмосфера</p>
+        <div class="photos-wrapper reveal" id="photo-stack">
+          <div class="stack-photo"><img src="images/photo-07-office.png" alt="Офіс"><span class="photo-label">Наш офіс</span></div>
+          <div class="stack-photo"><img src="images/photo-08-services.png" alt="Документи"><span class="photo-label">Юридичні послуги</span></div>
+          <div class="stack-photo"><img src="images/photo-09-approach.png" alt="Консультація"><span class="photo-label">Індивідуальний підхід</span></div>
+          <div class="stack-photo"><img src="images/photo-10-vyshhorod-map.png" alt="Вишгород"><span class="photo-label">Вишгород</span></div>
+        </div>
+        <div class="photo-nav" id="photo-nav"></div>
+      </section>
+    </div>
+  </div>
+
+  <div class="page" id="page-pro-nas" data-page-title="Запис на прийом">
+    <div class="content-card">
+      <div class="article-inner">
+        <a class="back" href="#home" data-page-link="home">← Головна</a>
+        <h2>Для запису потрібно:</h2>
+        <div class="article-body">
+          <p class="article-lead">Для того щоб записатися на візит до нотаріуса, зателефонуйте на номер телефону:</p>
+          <p><a class="phone-highlight" href="tel:+380679635755">+380 (67) 963 57 55</a></p>
+          <p class="notice-title">Важливо</p>
+          <p>Записатись заздалегідь, оскільки, прийшовши без попереднього запису, є велика ймовірність, що у нотаріуса будуть клієнти.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-poslugy" data-page-title="Послуги">
+    <div class="content-card">
+      <div class="article-inner article-inner-wide">
+        <a class="back" href="#home" data-page-link="home">← Головна</a>
+        <h2>Види послуг</h2>
+
+        <section class="service-overview-section" id="services-contracts">
+          <h3 class="service-overview-title">Оформлення договорів</h3>
+          <div class="service-grid">
+            <a class="service-card" href="#service-sale-detail" data-page-link="service-sale-detail" id="service-sale">
+              <span class="service-card-title">Договір купівлі-продажу</span>
+              <span class="service-card-cta">Дізнатись про послугу <span>↗</span></span>
+            </a>
+            <a class="service-card" href="#service-gift-detail" data-page-link="service-gift-detail" id="service-gift">
+              <span class="service-card-title">Дарування</span>
+              <span class="service-card-cta">Дізнатись про послугу <span>↗</span></span>
+            </a>
+            <a class="service-card" href="#service-exchange-detail" data-page-link="service-exchange-detail">
+              <span class="service-card-title">Договір міни</span>
+              <span class="service-card-cta">Дізнатись про послугу <span>↗</span></span>
+            </a>
+            <a class="service-card" href="#service-rent-detail" data-page-link="service-rent-detail">
+              <span class="service-card-title">Договір оренди</span>
+              <span class="service-card-cta">Дізнатись про послугу <span>↗</span></span>
+            </a>
+          </div>
+        </section>
+
+        <section class="service-overview-section" id="services-power">
+          <h3 class="service-overview-title">Оформлення довіреностей</h3>
+          <div class="service-grid">
+            <a class="service-card" href="#service-power-detail" data-page-link="service-power-detail" id="service-power">
+              <span class="service-card-title">Довіреність</span>
+              <span class="service-card-cta">Дізнатись про послугу <span>↗</span></span>
+            </a>
+            <a class="service-card" href="#service-general-power-detail" data-page-link="service-general-power-detail">
+              <span class="service-card-title">Генеральна довіреність</span>
+              <span class="service-card-cta">Дізнатись про послугу <span>↗</span></span>
+            </a>
+            <a class="service-card" href="#service-auto-power-detail" data-page-link="service-auto-power-detail">
+              <span class="service-card-title">Довіреність на авто</span>
+              <span class="service-card-cta">Дізнатись про послугу <span>↗</span></span>
+            </a>
+            <a class="service-card" href="#service-estate-power-detail" data-page-link="service-estate-power-detail">
+              <span class="service-card-title">Довіреність на нерухомість</span>
+              <span class="service-card-cta">Дізнатись про послугу <span>↗</span></span>
+            </a>
+          </div>
+        </section>
+
+        <section class="service-overview-section" id="services-documents">
+          <h3 class="service-overview-title">Оформлення документів</h3>
+          <div class="service-grid">
+            <a class="service-card" href="#service-inheritance-detail" data-page-link="service-inheritance-detail" id="service-inheritance">
+              <span class="service-card-title">Спадщина</span>
+              <span class="service-card-cta">Дізнатись про послугу <span>↗</span></span>
+            </a>
+            <a class="service-card" href="#service-testament-detail" data-page-link="service-testament-detail">
+              <span class="service-card-title">Заповіт</span>
+              <span class="service-card-cta">Дізнатись про послугу <span>↗</span></span>
+            </a>
+            <a class="service-card" href="#service-signature-detail" data-page-link="service-signature-detail">
+              <span class="service-card-title">Засвідчення підпису</span>
+              <span class="service-card-cta">Дізнатись про послугу <span>↗</span></span>
+            </a>
+            <a class="service-card" href="#service-child-travel-detail" data-page-link="service-child-travel-detail">
+              <span class="service-card-title">Згода на виїзд дитини</span>
+              <span class="service-card-cta">Дізнатись про послугу <span>↗</span></span>
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-grafik" data-page-title="Графік роботи">
+    <div class="content-card">
+      <div class="article-inner">
+        <a class="back" href="#home" data-page-link="home">← Головна</a>
+        <h2>Офіс працює з:</h2>
+        <div class="article-body">
+          <p class="article-lead">Понеділок - пʼятниця: <strong>10:00-18:00</strong></p>
+          <p>Субота: <strong>ТІЛЬКИ за попереднім записом.</strong></p>
+          <p>Неділя: <strong>Вихідний.</strong></p>
+          <p class="article-note"><strong>ВАЖЛИВО!</strong> У будні дні можливий візит без попереднього запису, та рекомендуємо заздалегідь дізнатися про наявність часу, та чи знаходитиметься нотаріус в офісі.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-vidguky" data-page-title="Відгуки">
+    <div class="content-card">
+      <div class="article-inner">
+        <a class="back" href="#home" data-page-link="home">← Головна</a>
+        <h2>Відгуки</h2>
+        <div class="article-body">
+          <p class="article-lead">Суб'єктивна думка клієнтів - візитна карта нашого офісу, саме завдяки їм у вас не буде жодних сумнівів.</p>
+          <div class="photos-wrapper reveal stack-carousel" id="reviews-stack">
+            <div class="stack-photo"><img src="images/photo-02-review-1.png" alt="Відгук клієнта 1"><span class="photo-label">Відгук клієнта</span></div>
+            <div class="stack-photo"><img src="images/photo-03-review-2.png" alt="Відгук клієнта 2"><span class="photo-label">Рекомендації</span></div>
+            <div class="stack-photo"><img src="images/photo-04-review-3.png" alt="Відгук клієнта 3"><span class="photo-label">Досвід клієнтів</span></div>
+            <div class="stack-photo"><img src="images/photo-05-review-4.png" alt="Відгук клієнта 4"><span class="photo-label">Висока оцінка</span></div>
+          </div>
+          <div class="photo-nav" id="reviews-nav"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-dodatkova" data-page-title="Додаткова інформація">
+    <div class="content-card">
+      <div class="article-inner">
+        <a class="back" href="#home" data-page-link="home">← Головна</a>
+        <h2>Додаткова інформація</h2>
+        <div class="article-body"><div class="article-placeholder">Стаття</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-article-clients" data-page-title="1000+ клієнтів">
+    <div class="content-card">
+      <div class="article-inner">
+        <a class="back" href="#home" data-page-link="home">← Головна</a>
+        <h2>1000+ задоволених клієнтів</h2>
+        <div class="article-body">
+          <p>Кожен клієнт отримує індивідуальний, виважений та конфіденційний підхід, що ґрунтується на глибокому розумінні його потреб і правової ситуації.</p>
+          <p>Основною метою нотаріальної діяльності є не лише оформлення документів, а й забезпечення юридичної безпеки клієнта, мінімізація ризиків та прийняття бездоганно обґрунтованих рішень.</p>
+          <div class="article-media">
+            <img src="images/photo-02-review-1.png" alt="Відгук клієнта">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-article-experience" data-page-title="20+ років досвіду">
+    <div class="content-card">
+      <div class="article-inner">
+        <a class="back" href="#home" data-page-link="home">← Головна</a>
+        <h2>20+ років досвіду</h2>
+        <div class="article-body">
+          <p>20 років сумлінної та добросовісної праці гарантують найвищий рівень обслуговування та якість виконаної роботи.</p>
+          <p>Багаторічний досвід дозволяє ефективно вирішувати навіть найскладніші юридичні питання, забезпечуючи надійність, точність і відповідність усім вимогам чинного законодавства.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-article-prof" data-page-title="Професіоналізм">
+    <div class="content-card">
+      <div class="article-inner">
+        <a class="back" href="#home" data-page-link="home">← Головна</a>
+        <h2>Професіоналізм</h2>
+        <div class="article-body">
+          <p>Професіоналізм — це фундамент довіри та репутації у сфері нотаріальних послуг.</p>
+          <p>У роботі поєднуються глибока експертиза, уважність до деталей та бездоганне знання законодавства, що дозволяє надавати послуги на найвищому рівні.</p>
+          <p>Ознайомлення з <a class="article-link" href="#vidguky" data-page-link="vidguky">відгуками</a> клієнтів підтверджує стабільно високі стандарти обслуговування.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-article-consult" data-page-title="Юридичні консультації">
+    <div class="content-card">
+      <div class="article-inner">
+        <a class="back" href="#home" data-page-link="home">← Головна</a>
+        <h2>Юридичні консультації</h2>
+        <div class="article-body">
+          <p>Юридичні консультації є невід’ємною складовою якісного нотаріального супроводу, що дозволяє клієнту діяти впевнено та обґрунтовано.</p>
+          <p>Кожне звернення розглядається з урахуванням усіх правових нюансів та індивідуальних обставин.</p>
+          <div class="article-media">
+            <img src="images/photo-06-lady-justice.png" alt="Юридичні консультації">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-service-sale-detail" data-page-title="Договір купівлі-продажу">
+    <div class="content-card">
+      <div class="article-inner">
+        <a class="back" href="#poslugy" data-page-link="poslugy">← Послуги</a>
+        <h2>Договір купівлі-продажу</h2>
+        <div class="article-body"><div class="article-placeholder">Сторінка послуги буде наповнена пізніше.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-service-gift-detail" data-page-title="Дарування">
+    <div class="content-card">
+      <div class="article-inner">
+        <a class="back" href="#poslugy" data-page-link="poslugy">← Послуги</a>
+        <h2>Дарування</h2>
+        <div class="article-body"><div class="article-placeholder">Сторінка послуги буде наповнена пізніше.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-service-exchange-detail" data-page-title="Договір міни">
+    <div class="content-card">
+      <div class="article-inner">
+        <a class="back" href="#poslugy" data-page-link="poslugy">← Послуги</a>
+        <h2>Договір міни</h2>
+        <div class="article-body"><div class="article-placeholder">Сторінка послуги буде наповнена пізніше.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-service-rent-detail" data-page-title="Договір оренди">
+    <div class="content-card">
+      <div class="article-inner">
+        <a class="back" href="#poslugy" data-page-link="poslugy">← Послуги</a>
+        <h2>Договір оренди</h2>
+        <div class="article-body"><div class="article-placeholder">Сторінка послуги буде наповнена пізніше.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-service-power-detail" data-page-title="Довіреність">
+    <div class="content-card">
+      <div class="article-inner">
+        <a class="back" href="#poslugy" data-page-link="poslugy">← Послуги</a>
+        <h2>Довіреність</h2>
+        <div class="article-body"><div class="article-placeholder">Сторінка послуги буде наповнена пізніше.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-service-general-power-detail" data-page-title="Генеральна довіреність">
+    <div class="content-card">
+      <div class="article-inner">
+        <a class="back" href="#poslugy" data-page-link="poslugy">← Послуги</a>
+        <h2>Генеральна довіреність</h2>
+        <div class="article-body"><div class="article-placeholder">Сторінка послуги буде наповнена пізніше.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-service-auto-power-detail" data-page-title="Довіреність на авто">
+    <div class="content-card">
+      <div class="article-inner">
+        <a class="back" href="#poslugy" data-page-link="poslugy">← Послуги</a>
+        <h2>Довіреність на авто</h2>
+        <div class="article-body"><div class="article-placeholder">Сторінка послуги буде наповнена пізніше.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-service-estate-power-detail" data-page-title="Довіреність на нерухомість">
+    <div class="content-card">
+      <div class="article-inner">
+        <a class="back" href="#poslugy" data-page-link="poslugy">← Послуги</a>
+        <h2>Довіреність на нерухомість</h2>
+        <div class="article-body"><div class="article-placeholder">Сторінка послуги буде наповнена пізніше.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-service-inheritance-detail" data-page-title="Спадщина">
+    <div class="content-card">
+      <div class="article-inner">
+        <a class="back" href="#poslugy" data-page-link="poslugy">← Послуги</a>
+        <h2>Спадщина</h2>
+        <div class="article-body"><div class="article-placeholder">Сторінка послуги буде наповнена пізніше.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-service-testament-detail" data-page-title="Заповіт">
+    <div class="content-card">
+      <div class="article-inner">
+        <a class="back" href="#poslugy" data-page-link="poslugy">← Послуги</a>
+        <h2>Заповіт</h2>
+        <div class="article-body"><div class="article-placeholder">Сторінка послуги буде наповнена пізніше.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-service-signature-detail" data-page-title="Засвідчення підпису">
+    <div class="content-card">
+      <div class="article-inner">
+        <a class="back" href="#poslugy" data-page-link="poslugy">← Послуги</a>
+        <h2>Засвідчення підпису</h2>
+        <div class="article-body"><div class="article-placeholder">Сторінка послуги буде наповнена пізніше.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-service-child-travel-detail" data-page-title="Згода на виїзд дитини">
+    <div class="content-card">
+      <div class="article-inner">
+        <a class="back" href="#poslugy" data-page-link="poslugy">← Послуги</a>
+        <h2>Згода на виїзд дитини</h2>
+        <div class="article-body"><div class="article-placeholder">Сторінка послуги буде наповнена пізніше.</div></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Приватний нотаріус Семенюк Тетяна</div>
+      <div class="footer-tagline">Нотаріальні послуги у Вишгороді</div>
+    </div>
+    <div class="footer-contacts">
+      <a href="mailto:notsem@ukr.net">✉ електронна пошта: notsem@ukr.net</a>
+      <a href="tel:+380679635755">✆ номер: +380 (67) 963 57 55</a>
+      <span>◈ Instagram: @not_sem</span>
+      <span>⌖ адреса: м. Вишгород, вул. Набережна, 6-Ж</span>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Семенюк Тетяна. Всі права захищені.</div>
+</footer>
+
+<div class="search-modal" id="search-modal" aria-hidden="true">
+  <div class="search-dialog" role="dialog" aria-modal="true" aria-labelledby="search-title">
+    <div class="search-head">
+      <div>
+        <p class="section-label">Пошук по сайту</p>
+        <h2 id="search-title">Знайти інформацію</h2>
+      </div>
+      <button class="search-close" type="button" id="close-search" aria-label="Закрити пошук">×</button>
+    </div>
+    <label class="search-field">
+      <span>Введіть слово або фразу</span>
+      <input type="search" id="site-search-input" placeholder="Наприклад: графік, консультації, запис" autocomplete="off">
+    </label>
+    <div class="search-results" id="search-results">
+      <p class="search-empty">Почніть вводити запит, і я покажу, де на сайті є збіги.</p>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
