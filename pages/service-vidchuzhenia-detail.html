@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Договори відчуження · Нотаріус Семенюк Тетяна</title>
+<meta name="description" content="Нотаріальне оформлення договору купівлі-продажу у Вишгороді.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-left">
+    <a class="brand-link" href="../index.html" aria-label="На головну">
+      <img class="logo-mark logo-image" src="../images/logo.png" alt="Логотип нотаріуса">
+      <span class="logo-text">Семенюк Тетяна</span>
+    </a>
+  </div>
+
+  <nav id="main-nav" aria-label="Основна навігація">
+    <a href="pro-nas.html">Записатися зараз</a>
+    <a href="poslugy.html">Послуги</a>
+    <a href="grafik.html">Графік роботи</a>
+    <a href="vidguky.html">Відгуки</a>
+    <a href="dodatkova.html">Додаткова інформація</a>
+  </nav>
+
+  <div class="header-right">
+    <button class="search-btn" type="button" id="open-search" aria-haspopup="dialog" aria-controls="search-modal">
+      <svg class="search-icon" viewBox="0 0 16 16" aria-hidden="true">
+        <circle cx="7" cy="7" r="4.5"></circle>
+        <line x1="10.5" y1="10.5" x2="14" y2="14"></line>
+      </svg>
+      Пошук
+    </button>
+  </div>
+
+  <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Відкрити меню">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+  <div class="page active" id="page-service-vidchuzhenia-detail">
+    <div class="content-card">
+      <div class="article-inner">
+        <a class="back" href="poslugy.html">← Послуги</a>
+        <h2>Договори відчуження</h2>
+
+        <div class="quick-actions">
+          <a class="quick-btn" href="service-kupivlia-prodazhu-detail.html" style="padding: 2.2rem 2.6rem; font-size: 1.3rem;">Договір купівлі-продажу</a>
+          <a class="quick-btn" href="service-daruvannia-detail.html" style="padding: 2.2rem 2.6rem; font-size: 1.3rem;">Дарування</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Приватний нотаріус Семенюк Тетяна</div>
+      <div class="footer-tagline">Нотаріальні послуги у Вишгороді</div>
+    </div>
+    <div class="footer-contacts">
+      <a href="mailto:notsem@ukr.net">✉ електронна пошта: notsem@ukr.net</a>
+      <a href="tel:+380679635755">✆ номер: +380 (67) 963 57 55</a>
+      <a href="https://instagram.com/not_sem" target="_blank" rel="noopener noreferrer">◈ Instagram: @not_sem</a>
+      <span>⌖ адреса: м. Вишгород, вул. Набережна, 6-Ж</span>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Семенюк Тетяна. Всі права захищені.</div>
+</footer>
+
+<div class="search-modal" id="search-modal" aria-hidden="true">
+  <div class="search-dialog" role="dialog" aria-modal="true" aria-labelledby="search-title">
+    <div class="search-head">
+      <div>
+        <p class="section-label">Пошук по сайту</p>
+        <h2 id="search-title">Знайти інформацію</h2>
+      </div>
+      <button class="search-close" type="button" id="close-search" aria-label="Закрити пошук">×</button>
+    </div>
+    <label class="search-field">
+      <span>Введіть слово або фразу</span>
+      <input type="search" id="site-search-input" placeholder="Наприклад: графік, консультації, запис" autocomplete="off">
+    </label>
+    <div class="search-results" id="search-results">
+      <p class="search-empty">Почніть вводити запит, і я покажу, де на сайті є збіги.</p>
+    </div>
+  </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
